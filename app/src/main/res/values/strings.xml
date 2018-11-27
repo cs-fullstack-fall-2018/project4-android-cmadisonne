@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Recipe List</string>
+
+    <string-array name="recipe_titles">
+        <item>Chewy Chocolate Brownies</item>
+        <item>Grilled Corn On The Cob</item>
+        <item>Tuna Casserole</item>
+    </string-array>
+
+    <string-array name="recipe_images">
+        <item>@drawable/brownies</item>
+        <item>@drawable/corn</item>
+        <item>@drawable/tuna</item>
+    </string-array>
+
+    <string-array name="recipe_subtitles">
+        <item>A crispy chocolate crust with a gooey inside. Learn more...</item>
+        <item>Quick and easy grilled corn. Learn more...</item>
+        <item>Easy and simple 4 serving casserole. Learn more...</item>
+    </string-array>
+
+    <string-array name="recipe_date">
+        <item>July 3, 2011</item>
+        <item>June 8, 2008</item>
+        <item>January 18, 2009</item>
+    </string-array>
+
+    <string-array name="recipe_ingredients">
+        <item>3oz gluten-free dark sweet chocolate
+7 tbsp butter
+1 cup packed light brown sugar
+2 eggs, beaten
+few drops of vanilla extract
+1/2 cup ground almonds
+2 tbsp plus 1.5 tsp brown rice flour
+1 cup mixed nuts, toasted and roughly chopped (optional)</item>
+        <item>1 Corn on the Cob in the husk
+1 tbsp of Butter or Margarine
+3 tbsp crushed ice
+tin foil</item>
+        <item>1-1/2 cups cooked macaroni
+1/2 (6 ounce) can tuna, drained
+1/2 (10.75 ounce) can condensed cream of chicken soup
+1/2 cup shredded Cheddar cheese
+3/4 cup French fried onions</item>
+    </string-array>
+
+    <string-array name="recipe_instructions">
+        <item>1. Preheat the oven to 350 degrees F. Grease and line an 11×7 inch baking pan. Place the chocolate and butter in a large heatproof bowl over a pan of simmering water and melt. Stir in all the remaining ingredients and combine well.
+2. Pour the mixture into the prepared pan and place in the preheated oven for 30 minutes, until slightly springy in the center. Remove from the oven and cool for 10 minutes in the pan, then mark to divide into 15 squares.</item>
+        <item>1. Have enough tin foil to wrap each ear twice. Place all ingredients in tin foil and wrap.
+2. Grill for 30 minutes.</item>
+        <item>1. Preheat oven to 350 degrees F (175 degrees C).
+2. In a 9×13-inch baking dish, combine the macaroni, tuna, and soup. Mix well, and then top with cheese.
+3. Bake at 350 degrees F (175 degrees C) for about 25 minutes, or until bubbly. Sprinkle with fried onions, and bake for another 5 minutes. Serve hot</item>
+    </string-array>
+</resources>
