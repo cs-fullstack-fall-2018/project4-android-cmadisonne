@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         getData();
     }
 
-    private void getData (){
+    private void getData() {
         String[] titles = getResources().getStringArray(R.array.recipe_titles);
         String[] subtitles = getResources().getStringArray(R.array.recipe_subtitles);
         String[] date = getResources().getStringArray(R.array.recipe_date);
@@ -46,27 +45,27 @@ public class MainActivity extends AppCompatActivity {
 
         mRecipeList.clear();
 
-        for(int i=0; i < titles.length; i ++){
-            mRecipeList.add(new Recipe(titles[i], subtitles[i],date[i], ingredients[i], instructions[i]));
+        for (int i = 0; i < titles.length; i++) {
+            mRecipeList.add(new Recipe(titles[i], subtitles[i], date[i], ingredients[i], instructions[i]));
         }
 
         mAdapter.notifyDataSetChanged();
     }
 
-    public void openWebsite(View view) {
+    public void openWebsite(MenuItem item) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/madisonne-cooper-61451a145/?trk=pub-pbmap"));
         startActivity(intent);
     }
 
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.share:
                 displayToast("Share");
                 return true;
@@ -87,4 +86,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.LENGTH_SHORT).show();
 
     }
+
 }
