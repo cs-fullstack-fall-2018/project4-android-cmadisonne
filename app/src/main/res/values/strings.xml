@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Recipe List</string>
+    <string name="developer">Developer</string>
+    <string name="location">Location</string>
+    <string name="share">Share</string>
 
     <string-array name="recipe_titles">
         <item>Chewy Chocolate Brownies</item>
