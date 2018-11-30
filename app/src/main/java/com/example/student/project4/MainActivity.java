@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         getData();
+    }
+
+    public void callRecipe(View view){
+        Intent i = new Intent(getApplicationContext(), Recipe.class);
+        startActivity(i);
     }
 
     private void getData() {
