@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getData() {
+        String[] image;
+        image = getResources().getStringArray( R.array.recipe_images);
         String[] titles = getResources().getStringArray(R.array.recipe_titles);
         String[] subtitles = getResources().getStringArray(R.array.recipe_subtitles);
         String[] date = getResources().getStringArray(R.array.recipe_date);
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         mRecipeList.clear();
 
         for (int i = 0; i < titles.length; i++) {
-            mRecipeList.add(new Recipe(titles[i], subtitles[i], date[i], ingredients[i], instructions[i]));
+            mRecipeList.add(new Recipe(image[i] , titles[i], subtitles[i], date[i], ingredients[i], instructions[i]));
         }
 
         mAdapter.notifyDataSetChanged();

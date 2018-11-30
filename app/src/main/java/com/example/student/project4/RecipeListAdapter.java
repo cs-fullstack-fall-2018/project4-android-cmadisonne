@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,8 +16,8 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
     private final ArrayList<Recipe> mRecipeList;
     private Context mContext;
 
-    public RecipeListAdapter(Context context,
-                             ArrayList<Recipe> RecipeList) {
+    public RecipeListAdapter(Context context, ArrayList<Recipe> RecipeList)
+    {
         this.mRecipeList = RecipeList;
         this.mContext = context;
     }
@@ -43,10 +44,12 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
         private TextView mRecipeDate;
         private TextView mRecipeIngredients;
         private TextView mRecipeInstructions;
+        private ImageButton mRecipeImage;
 
         RecipeViewHolder(View itemView) {
             super(itemView);
             mRecipeTitle = (TextView)itemView.findViewById(R.id.recipe_title);
+            mRecipeImage = (ImageButton)itemView.findViewById(R.id.recipe_image);
             mRecipeSubtitle = (TextView)itemView.findViewById(R.id.recipe_subtitle);
             mRecipeDate = (TextView)itemView.findViewById(R.id.recipe_date);
 
@@ -55,8 +58,8 @@ public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.Re
 
         void bindTo(Recipe mCurrent){
             mRecipeTitle.setText(mCurrent.getTitle());
+//            mRecipeImage.setImage(mCurrent.getImage());
             mRecipeSubtitle.setText(mCurrent.getSubtitle());
-            mRecipeDate.setText(mCurrent.getDate());
         }
 
         @Override
